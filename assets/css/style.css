@@ -1,0 +1,518 @@
+/* all class css style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+/* common class css style */
+
+.text-while{
+    color: #fff!important;
+}
+
+.clear{
+    clear: both;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left !important;;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.row::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.col-half{
+    width:50%;
+}
+
+.col-full{
+    width:100%;
+}
+
+.col-third{
+    width:33.33333%;
+}
+
+.btn{
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 18px;
+    display: inline-block;
+    margin-top: 15px;
+    border:none;
+    -webkit-appearance: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color:#000;
+}
+
+.align-right{
+    float:right;
+}
+
+.margin-b48px{
+    margin-bottom: 48px!important;
+}
+
+
+
+ /*separate class css style  */
+
+ #content .slider-heading,
+    #slider .slider-desc{
+        text-shadow: 0 0 1px #000;
+    }
+
+#nav{
+    display: inline-block;
+
+}
+
+#nav .subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+    position: relative;
+    display: inline-block;
+}
+
+#nav .subnav{
+    display: none; 
+    position: absolute;
+    top:100%;
+    left: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+#nav .nav-arrow-down{
+    font-size: 10px;
+}
+
+#nav > li >a{
+text-transform: uppercase;
+}
+#header .mobile-menu-button,
+#header .search-button{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .mobile-menu-button{
+    display: none;
+}
+
+#header .header-menu-icon,
+#header .search-icon{
+    color:#fff;
+    font-size: 20px;
+    line-height: 46.5px;
+}
+
+#header .mobile-menu-button:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-button:hover .header-menu-icon{
+    color:#000;
+}
+
+#header .search-button:hover{
+    background-color: #f44336;
+}
+
+
+
+#nav  li  a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+    font-size: 15px;
+}
+
+#nav > li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover a, 
+#nav > li:hover > a{
+    display: block;
+    color: #000;
+    background-color: #ccc;
+} 
+
+#nav .subnav li a{ 
+    color: #000;
+    min-width: 160px;
+    line-height: 38.5px;
+    padding: 0px 16px;
+}
+
+#header{
+    height: 46.5px;
+    background-color: #000;
+    position: fixed;
+    top:0;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#slider{
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url('../image/chicago.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider #text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size:24px;
+}
+
+#slider .text-decription{
+    margin-top: 25px;
+    font-size:15px;
+}
+
+#content{
+
+}
+
+#content .content-section{
+    width: 800px;
+    max-width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 16px;
+    color:#000;
+}
+
+#content .section-heading{
+    font-size:30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+#content .section-sub-heading{
+    font-size:15px;
+    margin: 15px 0;
+    font-style:italic;
+    opacity: 0.6;
+    text-align: center;
+    
+}
+
+#content .about-text{
+    font-size:15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .members-list{
+    padding-top: 47px;
+
+}
+
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+
+}
+
+#content .member-img{
+    width: 154px;
+    border-radius: 5px;
+    padding-bottom: 16px;
+}
+
+#content .member-name{
+    padding: 16px 0;
+    font-size: 15px;
+
+}
+
+#content .tour-section{
+    background-color: #000;
+}
+
+#content .tickets-list{
+    background-color: #fff;
+    color: rgba(0,0,0,0.6);
+    margin-top: 40px;
+}
+
+#content .tickets-list li{
+    padding: 11px 16px;
+    border-bottom: rgba(0,0,0,0.3) solid 1px ;
+}
+
+#content .sold-out{
+    margin-left: 15px;
+    padding: 4px 6px;
+    background-color: #F44336;
+    color:#fff;
+}
+
+#content .quanlity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+    margin-right:16px;
+}
+
+#content .place-list{
+    margin: 32px -8px 0;
+}
+
+#content .place-item{
+    float: left;
+    width: 33.33333%;
+    padding: 0px 8px;
+
+}
+
+#content .place-img{
+    width:100%;
+    display: block;
+}
+
+#content .place-img:hover{
+    opacity: 0.6;
+}
+
+#content .place-body{
+    padding: 15px 16px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+#content .place-heading{
+    font-size: 15px;
+    font-weight: 550;
+}
+
+#content .place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+#content .place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+#content .place-btn{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#content .place-btn:hover{
+    background-color: #ccc;
+    color:#000;
+}
+
+.modal{
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .modal-container{
+    background-color: #fff;
+    color:#000;
+    width: 900px;
+    max-width: calc(100vw - 100px);
+    min-height: 200px;
+    position: relative;
+    animation: modalslide ease 0.5s;
+}   
+
+.modal .modal-header{
+    background-color: #009688;
+    color:#fff;
+    font-size:30px;
+    display: inline-flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    height:130px;
+}
+
+.modal-close{
+    position: absolute;
+    right:0;
+    padding: 10px;
+    opacity: 0.9;
+    color:#fff;
+}
+
+.modal-close:hover{
+    background-color: #ccc;
+    color:#000;
+}
+
+.modal-body {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.modal-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+.modal-btn {
+    border: none;
+    width: 100%;
+    background-color: #009688;
+    color: #fff;
+    font-size: 15px;
+    padding: 18px;
+}
+
+.modal-footer {
+    font-size: 15px;
+    float: right;
+    padding: 16px 0;
+}
+
+.modal-btn:hover{
+    opacity:0.5;
+}
+
+.modal-footer a{
+    color: #2196f3;
+
+}
+
+.header-icon-bag{
+    padding: 0 18px;
+}
+
+.modal-header-heading{
+    letter-spacing: 4px;
+}
+
+.modal.open{
+    display:flex;
+}
+
+@keyframes modalslide{
+    from {
+        opacity: 0;
+        transform :translateY(-300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-section .form-request{
+    font-size: 15px;
+    width:100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 0px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.content-section .contact-inf{
+    font-size:18px;
+    font-weight:500;
+    line-height:1.6;
+}
+
+.content-section i[class*="ti-"]{
+    padding-right:15px; 
+}
+
+.content-map .photo-map{
+    width:100%;
+}
+
+#footer .social-icon a{
+    font-size:24px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+
+#footer{
+    text-align: center;
+    padding: 90px 0;
+    line-height: 2;
+}
+
+#footer .footer-inf{
+    color:rgba(0,0,0,0.5);
+}
+
+#footer .footer-inf a{
+    color:rgba(0,0,0,0.5);
+} 
+
+
+
+
